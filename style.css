@@ -1,0 +1,320 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar.bg-primary {
+    background-color: #8B0000 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #000000 0%, #8B0000 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.hero-image-placeholder {
+    text-align: center;
+}
+
+.gradient-box {
+    width: 100%;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    border: 2px solid #8B0000;
+    position: relative;
+    overflow: hidden;
+    animation: pulseBox 3s ease-in-out infinite;
+}
+
+.youtube-icon {
+    width: 150px;
+    height: 150px;
+    z-index: 10;
+    position: relative;
+    animation: youtubePulse 2s ease-in-out infinite, youtubeFloat 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(139,0,0,0.8));
+}
+
+@keyframes pulseBox {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(139,0,0,0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px rgba(139,0,0,0.6);
+    }
+}
+
+@keyframes rotateGradient {
+    0% {
+        background: linear-gradient(135deg, rgba(139,0,0,0.3) 0%, rgba(0,0,0,0.5) 100%);
+    }
+    25% {
+        background: linear-gradient(225deg, rgba(139,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%);
+    }
+    50% {
+        background: linear-gradient(315deg, rgba(139,0,0,0.3) 0%, rgba(0,0,0,0.5) 100%);
+    }
+    75% {
+        background: linear-gradient(45deg, rgba(139,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%);
+    }
+    100% {
+        background: linear-gradient(135deg, rgba(139,0,0,0.3) 0%, rgba(0,0,0,0.5) 100%);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes youtubePulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+@keyframes youtubeFloat {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-10px) rotate(2deg);
+    }
+    50% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    75% {
+        transform: translateY(10px) rotate(-2deg);
+    }
+}
+
+.features-section {
+    background-color: #ffffff;
+}
+
+.feature-icon {
+    font-size: 3rem;
+}
+
+.card-title {
+    color: #000000;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #000000 0%, #8B0000 100%);
+    color: white;
+}
+
+.page-header .text-muted {
+    color: rgba(255, 255, 255, 0.8) !important;
+    opacity: 1;
+}
+
+.card {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(139,0,0,0.3) !important;
+    border-color: #8B0000;
+}
+
+.card-title {
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    color: #000000;
+}
+
+.creators-section {
+    background-color: #ffffff;
+}
+
+.companies-section {
+    background-color: #ffffff;
+}
+
+.contact-section {
+    background-color: #ffffff;
+}
+
+.contact-info-card {
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border: 1px solid #000000;
+    height: 100%;
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: #8B0000;
+}
+
+.contact-icon i {
+    font-size: 2.5rem;
+}
+
+.btn-primary {
+    background-color: #8B0000;
+    border: 2px solid #8B0000;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+.btn-outline-primary {
+    border: 2px solid #8B0000;
+    color: #8B0000;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #8B0000;
+    border-color: #8B0000;
+    color: #ffffff;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #000000;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.form-control:focus {
+    border-color: #8B0000;
+    box-shadow: 0 0 0 0.2rem rgba(139,0,0,0.25);
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.form-label {
+    color: #000000;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #000000 !important;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+    .gradient-box {
+        height: 200px;
+        font-size: 2rem;
+    }
+}
+
+.text-primary {
+    color: #8B0000 !important; /* this willl be applied when important is applied. overriding the bootstrap primary color*/
+}
+
+.text-success {
+    color: #8B0000 !important;
+}
+
+.text-muted {
+    color: #000000 !important;
+    opacity: 0.7;
+}
+
+.badge.bg-primary {
+    background-color: #8B0000 !important;
+    color: #ffffff;
+}
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+.text-light {
+    color: #ffffff !important;
+}
